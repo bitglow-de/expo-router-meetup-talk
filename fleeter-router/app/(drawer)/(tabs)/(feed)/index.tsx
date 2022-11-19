@@ -15,8 +15,9 @@ export default function Feed() {
         <View>
           <Text style={styles.heading}>Feed</Text>
           <Text>Welcome to the feed!</Text>
-          <Link href={"/detail"}>Show detail page</Link>
           <Link href={"/modal"}>Show modal page</Link>
+          <Link href={"/detail"}>Show detail page</Link>
+          <Link href={"/profile"}>Show profile</Link>
         </View>
         <StatusBar style="auto" />
       </View>
