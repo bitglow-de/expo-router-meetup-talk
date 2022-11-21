@@ -2,9 +2,9 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 
 type PageProps = {
-    title: string;
-    description?: string;
-}
+  title: string;
+  description?: string;
+};
 
 export default function Page({ title, description }: PageProps) {
   return (
