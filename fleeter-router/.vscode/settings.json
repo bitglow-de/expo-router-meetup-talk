@@ -1,0 +1,18 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[typescript]": {
+    "editor.codeActionsOnSave": [
+      "source.organizeImports",
+      "source.fixAll.eslint"
+    ],
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": [
+      "source.organizeImports",
+      "source.fixAll.eslint"
+    ],
+  }
+}
