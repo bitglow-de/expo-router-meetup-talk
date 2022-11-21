@@ -1,13 +1,21 @@
 import { StatusBar } from "expo-status-bar";
+import React, { useCallback } from "react";
 import { StyleSheet, Text, View } from "react-native";
+import { ProfileList } from "../../../components/ProfileList";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <View>
+  const renderHeader = useCallback(() => {
+    return (
+      <View style={styles.header}>
         <Text style={styles.heading}>Search</Text>
         <Text>Search profiles...</Text>
       </View>
+    );
+  }, []);
+
+  return (
+    <View style={styles.container}>
+      <ProfileList header={renderHeader} />
       <StatusBar style="auto" />
     </View>
   );
@@ -15,10 +23,14 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    alignItems: "flex-start",
     backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    flex: 1,
+    paddingHorizontal: 5,
+  },
+  header: {
+    paddingHorizontal: 15,
+    paddingVertical: 20,
   },
   heading: {
     fontSize: 32,
