@@ -1,6 +1,7 @@
 import React from "react";
-import { Image, Pressable, StyleSheet, Text, View } from "react-native";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 import { useProfile, useToggleFollow } from "../store/hooks";
+import { Avatar } from "./Avatar";
 
 export const Profile: React.FC<{ id: string }> = ({ id }) => {
   const profile = useProfile(id);
@@ -15,7 +16,7 @@ export const Profile: React.FC<{ id: string }> = ({ id }) => {
   const { image, name, username, isFollowing } = profile;
   return (
     <View style={styles.container}>
-      <Image source={{ uri: image }} style={styles.avatar} />
+      <Avatar imageUri={image} />
       <View style={styles.metadata}>
         <View style={styles.nameGroup}>
           <Text style={styles.name}>{name}</Text>
@@ -39,11 +40,6 @@ export const Profile: React.FC<{ id: string }> = ({ id }) => {
 };
 
 const styles = StyleSheet.create({
-  avatar: {
-    aspectRatio: 1,
-    borderRadius: 24,
-    width: 48,
-  },
   container: {
     flexDirection: "row",
     marginTop: 20,
