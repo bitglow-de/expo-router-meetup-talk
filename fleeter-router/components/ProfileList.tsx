@@ -1,6 +1,7 @@
 import React, { memo, useCallback } from "react";
 import { FlatList, ListRenderItem, StyleSheet } from "react-native";
-import { Profile as ProfileType, useProfiles } from "../store/store";
+import { useProfiles } from "../store/hooks";
+import { Profile as ProfileType } from "../types/profile";
 import { Profile } from "./Profile";
 
 const FeedItem = memo<ProfileType>((props) => <Profile {...props} />);

@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, Pressable, StyleSheet, Text, View } from "react-native";
-import { useProfile, useToggleFollow } from "../store/store";
+import { useProfile, useToggleFollow } from "../store/hooks";
 
 export const Profile: React.FC<{ id: string }> = ({ id }) => {
   const profile = useProfile(id);

@@ -5,6 +5,7 @@ export type FleetMetadata = {
 };
 
 export type Fleet = {
+  id: string;
   content: string;
   isoPublishDate: string;
   metadata: FleetMetadata;
