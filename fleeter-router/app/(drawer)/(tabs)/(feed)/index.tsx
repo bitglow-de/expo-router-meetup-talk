@@ -1,6 +1,8 @@
 import { Link, Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
+import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import { Fleet } from "../../../../components/Fleet";
 
 export default function Feed() {
   return (
@@ -19,6 +21,7 @@ export default function Feed() {
           <Link href={"/detail"}>Show detail page</Link>
           <Link href={"/profile"}>Show profile</Link>
         </View>
+        <Fleet id="1" />
         <StatusBar style="auto" />
       </View>
     </>
@@ -27,10 +30,10 @@ export default function Feed() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    alignItems: "flex-start",
     backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    flex: 1,
+    paddingHorizontal: 5,
   },
   heading: {
     fontSize: 32,
