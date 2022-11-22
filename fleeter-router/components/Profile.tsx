@@ -57,7 +57,6 @@ const styles = StyleSheet.create({
     paddingVertical: 6,
   },
   followLabel: {
-    borderWidth: 1,
     color: "white",
     fontSize: 14,
     fontWeight: "700",
