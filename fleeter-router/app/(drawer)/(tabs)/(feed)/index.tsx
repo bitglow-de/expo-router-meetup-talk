@@ -1,10 +1,22 @@
 import { Link, Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import React from "react";
+import React, { useCallback } from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { Fleet } from "../../../../components/Fleet";
+import { FleetList } from "../../../../components/FleetList";
 
 export default function Feed() {
+  const renderHeader = useCallback(() => {
+    return (
+      <View style={styles.header}>
+        <Text style={styles.heading}>Feed</Text>
+        <Text>Welcome to the feed!</Text>
+        <Link href={"/modal"}>Show modal page</Link>
+        <Link href={"/detail"}>Show detail page</Link>
+        <Link href={"/profile"}>Show profile</Link>
+      </View>
+    );
+  }, []);
+
   return (
     <>
       <Stack.Screen
@@ -14,14 +26,7 @@ export default function Feed() {
         }}
       />
       <View style={styles.container}>
-        <View>
-          <Text style={styles.heading}>Feed</Text>
-          <Text>Welcome to the feed!</Text>
-          <Link href={"/modal"}>Show modal page</Link>
-          <Link href={"/detail"}>Show detail page</Link>
-          <Link href={"/profile"}>Show profile</Link>
-        </View>
-        <Fleet id="1" />
+        <FleetList header={renderHeader} />
         <StatusBar style="auto" />
       </View>
     </>
@@ -34,6 +39,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     flex: 1,
     paddingHorizontal: 5,
+  },
+  header: {
+    paddingHorizontal: 15,
+    paddingVertical: 20,
   },
   heading: {
     fontSize: 32,

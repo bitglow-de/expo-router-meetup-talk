@@ -1,7 +1,7 @@
 [
   {
     "id": "id-1",
-    "content": "JavaScript is 10 years old. (Yup, just checked.)<br/>But, only now, it's finally gotten to the point where it's starting to become useful.",
+    "content": "JavaScript is 10 years old. (Yup, just checked.)\n\nBut, only now, it's finally gotten to the point where it's starting to become useful.",
     "isoPublishDate": "2022-11-21T20:08:06.123Z",
     "metadata": {
       "comments": 36,
@@ -34,7 +34,7 @@
   },
   {
     "id": "id-4",
-    "content": "TODO:<br />* Add more todos<br/>* Remove more todos",
+    "content": "TODO:\n* Add more todos\n* Remove more todos",
     "isoPublishDate": "2022-11-19T13:42:12.821Z",
     "metadata": {
       "comments": 72,
