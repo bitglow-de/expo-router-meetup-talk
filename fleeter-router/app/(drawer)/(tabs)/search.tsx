@@ -1,9 +1,11 @@
+import { Tabs } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import React, { useCallback } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { ProfileList } from "../../../components/ProfileList";
+import { renderSearchIcon } from "../../../utils/tabs";
 
-export default function App() {
+export default function SearchScreen() {
   const renderHeader = useCallback(() => {
     return (
       <View style={styles.header}>
@@ -14,10 +16,13 @@ export default function App() {
   }, []);
 
   return (
-    <View style={styles.container}>
-      <ProfileList header={renderHeader} />
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <Tabs.Screen options={{ tabBarIcon: renderSearchIcon }} />
+      <View style={styles.container}>
+        <ProfileList header={renderHeader} />
+        <StatusBar style="auto" />
+      </View>
+    </>
   );
 }
 
