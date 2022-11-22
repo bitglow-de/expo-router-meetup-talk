@@ -1,19 +1,18 @@
 import React from "react";
 import { Image, Pressable, StyleSheet, Text, View } from "react-native";
+import { useProfile, useToggleFollow } from "../store/store";
 
-export type ProfileProps = {
-  image: string;
-  name: string;
-  username: string;
-  isFollowing: boolean;
-};
+export const Profile: React.FC<{ id: string }> = ({ id }) => {
+  const profile = useProfile(id);
+  const toggleFollow = useToggleFollow(id);
 
-export const Profile: React.FC<ProfileProps> = ({
-  image,
-  name,
-  username,
-  isFollowing,
-}) => {
+  console.log("render");
+
+  if (!profile) {
+    return null;
+  }
+
+  const { image, name, username, isFollowing } = profile;
   return (
     <View style={styles.container}>
       <Image source={{ uri: image }} style={styles.avatar} />
@@ -25,6 +24,7 @@ export const Profile: React.FC<ProfileProps> = ({
         <View>
           <Pressable
             style={isFollowing ? styles.unfollowButton : styles.followButton}
+            onPress={toggleFollow}
           >
             <Text
               style={isFollowing ? styles.unfollowLabel : styles.followLabel}

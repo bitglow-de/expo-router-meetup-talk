@@ -1,16 +1,17 @@
 import React, { memo, useCallback } from "react";
 import { FlatList, ListRenderItem, StyleSheet } from "react-native";
-import profiles from "../repository/profiles.json";
-import { Profile, ProfileProps } from "./Profile";
+import { Profile as ProfileType, useProfiles } from "../store/store";
+import { Profile } from "./Profile";
 
-const FeedItem = memo<ProfileProps>((props) => <Profile {...props} />);
+const FeedItem = memo<ProfileType>((props) => <Profile {...props} />);
 
 type ProfileListProps = {
   header: React.ComponentType<any>;
 };
 
 export const ProfileList: React.FC<ProfileListProps> = ({ header }) => {
-  const renderProfile: ListRenderItem<ProfileProps> = useCallback(
+  const profiles = useProfiles();
+  const renderProfile: ListRenderItem<ProfileType> = useCallback(
     ({ item: props }) => {
       return <FeedItem {...props} />;
     },
