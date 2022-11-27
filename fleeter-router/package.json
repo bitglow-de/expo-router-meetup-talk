@@ -6,7 +6,8 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "deeplink-search": "uri-scheme open exp://127.0.0.1:19000/--/search --ios"
   },
   "dependencies": {
     "@react-navigation/drawer": "^6.5.0",
