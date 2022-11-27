@@ -8,10 +8,14 @@ const FeedItem = memo<FleetType>((props) => <Fleet {...props} />);
 
 type ProfileListProps = {
   header: React.ComponentType<any>;
+  profileId?: string;
 };
 
-export const FleetList: React.FC<ProfileListProps> = ({ header }) => {
-  const fleets = useFleets();
+export const FleetList: React.FC<ProfileListProps> = ({
+  header,
+  profileId,
+}) => {
+  const fleets = useFleets(profileId);
   const renderFleet: ListRenderItem<FleetType> = useCallback(
     ({ item: props }) => {
       return <FeedItem {...props} />;

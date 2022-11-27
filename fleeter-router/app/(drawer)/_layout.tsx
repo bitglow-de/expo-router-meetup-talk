@@ -1,10 +1,11 @@
-import { Drawer } from "expo-router/drawer";
 import {
-  DrawerItemList,
   DrawerContentScrollView,
+  DrawerItemList,
 } from "@react-navigation/drawer";
-import { View, StyleSheet, Text } from "react-native";
 import { DrawerContentComponentProps } from "@react-navigation/drawer/lib/typescript/src";
+import { Drawer } from "expo-router/drawer";
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
 
 const FleeterDrawerContent: React.FC<DrawerContentComponentProps> = (props) => {
   return (
@@ -26,5 +27,10 @@ const styles = StyleSheet.create({
 });
 
 export default function Layout() {
-  return <Drawer drawerContent={FleeterDrawerContent} />;
+  return (
+    <Drawer
+      screenOptions={{ headerShown: false }}
+      drawerContent={FleeterDrawerContent}
+    />
+  );
 }

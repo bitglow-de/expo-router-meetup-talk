@@ -22,7 +22,6 @@ export default function Feed() {
       <Stack.Screen
         options={{
           title: "Feed",
-          headerShown: false,
         }}
       />
       <View style={styles.container}>

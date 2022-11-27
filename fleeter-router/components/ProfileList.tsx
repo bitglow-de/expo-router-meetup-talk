@@ -2,9 +2,9 @@ import React, { memo, useCallback } from "react";
 import { FlatList, ListRenderItem, StyleSheet } from "react-native";
 import { useProfiles } from "../store/hooks";
 import { Profile as ProfileType } from "../types/profile";
-import { Profile } from "./Profile";
+import { ProfileListEntry } from "./ProfileListEntry";
 
-const FeedItem = memo<ProfileType>((props) => <Profile {...props} />);
+const FeedItem = memo<ProfileType>((props) => <ProfileListEntry {...props} />);
 
 type ProfileListProps = {
   header: React.ComponentType<any>;

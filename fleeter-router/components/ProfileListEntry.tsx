@@ -1,13 +1,20 @@
+import { useLink } from "expo-router";
 import React from "react";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import {
+  Pressable,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { useProfile, useToggleFollow } from "../store/hooks";
 import { Avatar } from "./Avatar";
 
-export const Profile: React.FC<{ id: string }> = ({ id }) => {
+export const ProfileListEntry: React.FC<{ id: string }> = ({ id }) => {
   const profile = useProfile(id);
   const toggleFollow = useToggleFollow(id);
 
-  console.log("render");
+  const link = useLink();
 
   if (!profile) {
     return null;
@@ -15,27 +22,31 @@ export const Profile: React.FC<{ id: string }> = ({ id }) => {
 
   const { image, name, username, isFollowing } = profile;
   return (
-    <View style={styles.container}>
-      <Avatar imageUri={image} />
-      <View style={styles.metadata}>
-        <View style={styles.nameGroup}>
-          <Text style={styles.name}>{name}</Text>
-          <Text style={styles.username}>{`@${username}`}</Text>
-        </View>
-        <View>
-          <Pressable
-            style={isFollowing ? styles.unfollowButton : styles.followButton}
-            onPress={toggleFollow}
-          >
-            <Text
-              style={isFollowing ? styles.unfollowLabel : styles.followLabel}
+    <TouchableOpacity
+      onPress={() => link.push({ pathname: "/search/profile", params: { id } })}
+    >
+      <View style={styles.container}>
+        <Avatar imageUri={image} />
+        <View style={styles.metadata}>
+          <View style={styles.nameGroup}>
+            <Text style={styles.name}>{name}</Text>
+            <Text style={styles.username}>{`@${username}`}</Text>
+          </View>
+          <View>
+            <Pressable
+              style={isFollowing ? styles.unfollowButton : styles.followButton}
+              onPress={toggleFollow}
             >
-              {isFollowing ? "Unfollow" : "Follow"}
-            </Text>
-          </Pressable>
+              <Text
+                style={isFollowing ? styles.unfollowLabel : styles.followLabel}
+              >
+                {isFollowing ? "Unfollow" : "Follow"}
+              </Text>
+            </Pressable>
+          </View>
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

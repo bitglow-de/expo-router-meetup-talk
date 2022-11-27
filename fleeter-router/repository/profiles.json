@@ -68,5 +68,12 @@
     "username": "whisperingflagstaff",
     "image": "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=144&q=80",
     "isFollowing": false
+  },
+  {
+    "id": "11",
+    "name": "Twitter",
+    "username": "Twitter",
+    "image": "https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=144&q=80",
+    "isFollowing": false
   }
 ]

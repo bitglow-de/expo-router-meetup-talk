@@ -3,8 +3,10 @@ import { Fleet } from "../types/fleet";
 import { Profile } from "../types/profile";
 import { storeContext } from "./store";
 
-export const useFleets = () => {
-  return useContext(storeContext).fleets;
+export const useFleets = (id?: string) => {
+  const allFleets = useContext(storeContext).fleets;
+
+  return id ? allFleets.filter((fleet) => fleet.profileId === id) : allFleets;
 };
 
 export const useCreateFleet = () => {

@@ -1,9 +1,8 @@
-import { Tabs } from "expo-router";
+import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import React, { useCallback } from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { ProfileList } from "../../../components/ProfileList";
-import { renderSearchIcon } from "../../../utils/tabs";
+import { ProfileList } from "../../../../components/ProfileList";
 
 export default function SearchScreen() {
   const renderHeader = useCallback(() => {
@@ -17,7 +16,11 @@ export default function SearchScreen() {
 
   return (
     <>
-      <Tabs.Screen options={{ tabBarIcon: renderSearchIcon }} />
+      <Stack.Screen
+        options={{
+          title: "Search",
+        }}
+      />
       <View style={styles.container}>
         <ProfileList header={renderHeader} />
         <StatusBar style="auto" />
