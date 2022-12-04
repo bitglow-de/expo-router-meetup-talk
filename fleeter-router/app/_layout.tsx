@@ -3,7 +3,7 @@ import { RootContainer, Tabs } from "expo-router";
 import React from "react";
 import { useColorScheme } from "react-native";
 import { StoreProvider } from "../store/store";
-import { renderHomeIcon } from "../utils/tabs";
+import { renderHomeIcon, renderSearchIcon } from "../utils/tabs";
 
 export default function Root() {
   const colorScheme = useColorScheme();
@@ -15,6 +15,10 @@ export default function Root() {
         <Tabs.Screen
           name="(feed)"
           options={{ title: "Home", tabBarIcon: renderHomeIcon }}
+        />
+        <Tabs.Screen
+          name="search"
+          options={{ title: "Search", tabBarIcon: renderSearchIcon }}
         />
       </Tabs>
     </StoreProvider>
