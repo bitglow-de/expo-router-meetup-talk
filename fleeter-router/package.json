@@ -25,5 +25,8 @@
   "private": false,
   "repository": "https://github.com/bitglow-de/expo-router-meetup-talk",
   "author": "Jonathan Bones & Oliver Kwast",
-  "license": "MIT"
+  "license": "MIT",
+  "volta": {
+    "node": "16.18.1"
+  }
 }
