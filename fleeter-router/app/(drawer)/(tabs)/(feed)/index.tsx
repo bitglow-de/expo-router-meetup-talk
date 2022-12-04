@@ -2,7 +2,7 @@ import { Link, Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import React, { useCallback } from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { FleetList } from "../../../components/FleetList";
+import { FleetList } from "../../../../components/FleetList";
 
 export default function App() {
   const renderHeader = useCallback(() => {

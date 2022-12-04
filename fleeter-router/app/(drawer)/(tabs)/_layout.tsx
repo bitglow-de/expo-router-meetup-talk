@@ -1,6 +1,6 @@
 import { Tabs } from "expo-router";
 import React from "react";
-import { renderHomeIcon, renderSearchIcon } from "../../utils/tabs";
+import { renderHomeIcon, renderSearchIcon } from "../../../utils/tabs";
 
 export default function TabPages() {
   return (
