@@ -1,21 +1,48 @@
+import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import React from "react";
+import React, { useCallback } from "react";
 import { StyleSheet, Text, View } from "react-native";
+import { FleetList } from "../components/FleetList";
 
 export default function App() {
+  const renderHeader = useCallback(() => {
+    return (
+      <View style={styles.header}>
+        <Text style={styles.heading}>Feed</Text>
+        <Text>Welcome to the feed!</Text>
+      </View>
+    );
+  }, []);
+
   return (
-    <View style={styles.container}>
-      <Text>Open up app/index.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <Stack.Screen
+        options={{
+          title: "Feed",
+        }}
+      />
+      <View style={styles.container}>
+        <FleetList header={renderHeader} />
+        <StatusBar style="auto" />
+      </View>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    alignItems: "flex-start",
     backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    flex: 1,
+    paddingHorizontal: 5,
+  },
+  header: {
+    paddingHorizontal: 15,
+    paddingVertical: 20,
+  },
+  heading: {
+    fontSize: 32,
+    fontWeight: "700",
+    lineHeight: 40,
   },
 });
