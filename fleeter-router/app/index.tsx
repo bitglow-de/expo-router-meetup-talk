@@ -1,4 +1,4 @@
-import { Stack } from "expo-router";
+import { Link, Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import React, { useCallback } from "react";
 import { StyleSheet, Text, View } from "react-native";
@@ -10,6 +10,7 @@ export default function App() {
       <View style={styles.header}>
         <Text style={styles.heading}>Feed</Text>
         <Text>Welcome to the feed!</Text>
+        <Link href={"/detail"}>Show detail page</Link>
       </View>
     );
   }, []);
