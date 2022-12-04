@@ -1,0 +1,79 @@
+[
+  {
+    "id": "1",
+    "name": "Kevin Harlow",
+    "username": "worldlystokehold",
+    "image": "https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=144&q=80",
+    "isFollowing": false
+  },
+  {
+    "id": "2",
+    "name": "Sissie Helge",
+    "username": "rashparrel",
+    "image": "https://images.unsplash.com/photo-1542206395-9feb3edaa68d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=144&q=80",
+    "isFollowing": false
+  },
+  {
+    "id": "3",
+    "name": "Merrilyn Emmanuel",
+    "username": "weepyquartering",
+    "image": "https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=144&q=80",
+    "isFollowing": true
+  },
+  {
+    "id": "4",
+    "name": "Mazhar Mårten",
+    "username": "defensivedownhaul",
+    "image": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=144&q=80",
+    "isFollowing": false
+  },
+  {
+    "id": "5",
+    "name": "Braiden Owen",
+    "username": "sulkyforesail",
+    "image": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=144&q=80",
+    "isFollowing": false
+  },
+  {
+    "id": "6",
+    "name": "Lynne Drogo",
+    "username": "discretestarboard",
+    "image": "https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=144&q=80",
+    "isFollowing": true
+  },
+  {
+    "id": "7",
+    "name": "Victoria Hailey",
+    "username": "coherentbobstay",
+    "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=144&q=80",
+    "isFollowing": false
+  },
+  {
+    "id": "8",
+    "name": "Sonja Bassem",
+    "username": "trickydeadwood",
+    "image": "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=144&q=80",
+    "isFollowing": false
+  },
+  {
+    "id": "9",
+    "name": "Malika Addie",
+    "username": "jazzymizzen",
+    "image": "https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=144&q=80",
+    "isFollowing": false
+  },
+  {
+    "id": "10",
+    "name": "Otmar Amine",
+    "username": "whisperingflagstaff",
+    "image": "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=144&q=80",
+    "isFollowing": false
+  },
+  {
+    "id": "11",
+    "name": "Twitter",
+    "username": "Twitter",
+    "image": "https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=144&q=80",
+    "isFollowing": false
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "id-1",
+    "content": "JavaScript is 10 years old. (Yup, just checked.)\n\nBut, only now, it's finally gotten to the point where it's starting to become useful.",
+    "isoPublishDate": "2022-11-21T20:08:06.123Z",
+    "metadata": {
+      "comments": 36,
+      "likes": 898,
+      "refleets": 281
+    },
+    "profileId": "2"
+  },
+  {
+    "id": "id-2",
+    "content": "The internet is your brain on legs",
+    "isoPublishDate": "2022-11-21T18:42:21.859Z",
+    "metadata": {
+      "comments": 19,
+      "likes": 247,
+      "refleets": 19
+    },
+    "profileId": "5"
+  },
+  {
+    "id": "id-3",
+    "content": "We've already solved most of the problems, just missing a few key pieces. 🔥",
+    "isoPublishDate": "2022-11-22T09:15:30.641Z",
+    "metadata": {
+      "comments": 1,
+      "likes": 5,
+      "refleets": 2
+    },
+    "profileId": "8"
+  },
+  {
+    "id": "id-4",
+    "content": "TODO:\n* Add more todos\n* Remove more todos",
+    "isoPublishDate": "2022-11-19T13:42:12.821Z",
+    "metadata": {
+      "comments": 72,
+      "likes": 3043,
+      "refleets": 2383
+    },
+    "profileId": "1"
+  },
+  {
+    "id": "id-5",
+    "content": "Wow, Fleeter is impressive. Best platform we've ever seen! 👏",
+    "isoPublishDate": "2022-11-19T13:42:12.821Z",
+    "metadata": {
+      "comments": 728,
+      "likes": 1007345,
+      "refleets": 50646
+    },
+    "profileId": "11"
+  }
+]
