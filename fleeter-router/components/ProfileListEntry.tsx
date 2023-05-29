@@ -23,9 +23,7 @@ export const ProfileListEntry: React.FC<{ id: string }> = ({ id }) => {
   const { image, name, username, isFollowing } = profile;
   return (
     <TouchableOpacity
-      onPress={() =>
-        router.push({ pathname: "/search/profile", params: { id } })
-      }
+      onPress={() => router.push({ pathname: `/search/profile/${id}` })}
     >
       <View style={styles.container}>
         <Avatar imageUri={image} />

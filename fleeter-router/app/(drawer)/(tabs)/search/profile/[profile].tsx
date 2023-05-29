@@ -1,18 +1,17 @@
 import { Stack, useLocalSearchParams } from "expo-router";
 import React from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
-import { FleetList } from "../../../../components/FleetList";
-import { useProfile } from "../../../../store/hooks";
+import { FleetList } from "../../../../../components/FleetList";
+import { useProfile } from "../../../../../store/hooks";
 
 export default function ProfileScreen() {
-  // @ts-ignore
-  const params = useLocalSearchParams<{ id: string }>();
-  //@ts-ignore
-  const profile = useProfile(params?.id);
+  const { profile: id } =
+    useLocalSearchParams<"/(drawer)/(tabs)/search/profile/[profile]">();
+  const profile = useProfile(id);
 
   if (!profile) return null;
 
-  const { image, name, username, id } = profile;
+  const { image, name, username } = profile;
 
   const header = (
     <View style={styles.header}>
