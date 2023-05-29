@@ -1,8 +1,8 @@
+import { ProfileList } from "@/components/ProfileList";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import React, { useCallback } from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { ProfileList } from "../../../../components/ProfileList";
 
 export default function SearchScreen() {
   const renderHeader = useCallback(() => {

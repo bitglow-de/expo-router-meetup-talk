@@ -1,9 +1,9 @@
+import { useProfile } from "@/store/hooks";
+import { Fleet as FleetType } from "@/types/fleet";
+import { deriveTimestamp } from "@/utils/date";
 import React, { useMemo } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import Markdown from "react-native-marked";
-import { useProfile } from "../store/hooks";
-import { Fleet as FleetType } from "../types/fleet";
-import { deriveTimestamp } from "../utils/date";
 import { ActionButton } from "./ActionButton";
 import { Avatar } from "./Avatar";
 

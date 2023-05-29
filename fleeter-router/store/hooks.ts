@@ -1,6 +1,6 @@
+import { Fleet } from "@/types/fleet";
+import { Profile } from "@/types/profile";
 import { useContext } from "react";
-import { Fleet } from "../types/fleet";
-import { Profile } from "../types/profile";
 import { storeContext } from "./store";
 
 export const useFleets = (id?: string) => {

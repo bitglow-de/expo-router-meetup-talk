@@ -1,8 +1,8 @@
+import { FleetList } from "@/components/FleetList";
+import { useProfile } from "@/store/hooks";
 import { Stack, useLocalSearchParams } from "expo-router";
 import React from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
-import { FleetList } from "../../../../../components/FleetList";
-import { useProfile } from "../../../../../store/hooks";
 
 export default function ProfileScreen() {
   const { profile: id } =

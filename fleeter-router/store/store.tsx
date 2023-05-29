@@ -1,8 +1,8 @@
+import importedFleets from "@/repository/fleets.json";
+import importedProfiles from "@/repository/profiles.json";
+import { Fleet } from "@/types/fleet";
+import { Profile } from "@/types/profile";
 import React, { createContext, FC, PropsWithChildren, useState } from "react";
-import importedFleets from "../repository/fleets.json";
-import importedProfiles from "../repository/profiles.json";
-import { Fleet } from "../types/fleet";
-import { Profile } from "../types/profile";
 
 export type Store = {
   fleets: Fleet[];

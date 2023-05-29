@@ -1,3 +1,5 @@
+import { useFleets } from "@/store/hooks";
+import { Fleet as FleetType } from "@/types/fleet";
 import React, { memo, useCallback } from "react";
 import {
   FlatList,
@@ -5,8 +7,6 @@ import {
   ListRenderItem,
   StyleSheet,
 } from "react-native";
-import { useFleets } from "../store/hooks";
-import { Fleet as FleetType } from "../types/fleet";
 import { Fleet } from "./Fleet";
 
 const FeedItem = memo<FleetType>((props) => <Fleet {...props} />);

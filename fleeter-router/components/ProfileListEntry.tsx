@@ -1,3 +1,4 @@
+import { useProfile, useToggleFollow } from "@/store/hooks";
 import { useRouter } from "expo-router";
 import React from "react";
 import {
@@ -7,7 +8,6 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { useProfile, useToggleFollow } from "../store/hooks";
 import { Avatar } from "./Avatar";
 
 export const ProfileListEntry: React.FC<{ id: string }> = ({ id }) => {
