@@ -1,4 +1,4 @@
-import { useLink } from "expo-router";
+import { useRouter } from "expo-router";
 import React from "react";
 import {
   Pressable,
@@ -14,7 +14,7 @@ export const ProfileListEntry: React.FC<{ id: string }> = ({ id }) => {
   const profile = useProfile(id);
   const toggleFollow = useToggleFollow(id);
 
-  const link = useLink();
+  const router = useRouter();
 
   if (!profile) {
     return null;
@@ -23,7 +23,9 @@ export const ProfileListEntry: React.FC<{ id: string }> = ({ id }) => {
   const { image, name, username, isFollowing } = profile;
   return (
     <TouchableOpacity
-      onPress={() => link.push({ pathname: "/search/profile", params: { id } })}
+      onPress={() =>
+        router.push({ pathname: "/search/profile", params: { id } })
+      }
     >
       <View style={styles.container}>
         <Avatar imageUri={image} />
