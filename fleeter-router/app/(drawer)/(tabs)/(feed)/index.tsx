@@ -13,6 +13,7 @@ export default function Feed() {
         <Link href={"/modal"}>Show modal page</Link>
         <Link href={"/detail"}>Show detail page</Link>
         <Link href={"/profile"}>Show profile</Link>
+        <Link href={"/(drawer)/(tabs)/search/profile/1"}>Show profile</Link>
       </View>
     );
   }, []);
