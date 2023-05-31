@@ -33,7 +33,9 @@
       "package": "de.bitglow.fleeter"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "static"
     },
     "experiments": {
       "tsconfigPaths": true
