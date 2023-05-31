@@ -4439,12 +4439,20 @@ expo-splash-screen@~0.18.1:
     "@expo/configure-splash-screen" "^0.6.0"
     "@expo/prebuild-config" "6.0.1"
 
+expo-splash-screen@~0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/expo-splash-screen/-/expo-splash-screen-0.19.0.tgz#4d626dbccbbd68c5aaf64926645c4cdbc53e85fb"
+  integrity sha512-qPugWwoY5h9q6h7TjmmqH+t4S8iho1g9ymqbHOHk8btbj9Q2QLl4BdAWkTUG3jQQ3HUc7h8/+rurDsvhxpT5UQ==
+  dependencies:
+    "@expo/configure-splash-screen" "^0.6.0"
+    "@expo/prebuild-config" "6.0.2"
+
 expo-status-bar@~1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-1.5.0.tgz#b4905c178fef9d7f381aa16300f6bf4e199cf423"
   integrity sha512-Sf/yTITfipPAFNOTT5/QZS4Ns/RuSe0xjrLtu3qir2CbyQ58A22gojM6EUzP5JX2YeXQCMSIozLRvL0mYr93uw==
 
-expo@^49.0.0-alpha.3:
+expo@~49.0.0-alpha.1:
   version "49.0.0-alpha.3"
   resolved "https://registry.yarnpkg.com/expo/-/expo-49.0.0-alpha.3.tgz#523bcad5b114823d47351c9a842ab3841109d07f"
   integrity sha512-fZCtE3xP7DJJMvrgOWyltnlwjKnEZ32LknhWyZoHQvJ1XjuDFVizXtMdCcQ0TNOrpQOg7Skj+PalGSPcRPFQtw==

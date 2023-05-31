@@ -20,13 +20,17 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "de.bitglow.fleeter"
+      "bundleIdentifier": "de.bitglow.fleeter",
+      "icon": "./assets/icon.png"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+        "foregroundImage": "./assets/icon_adaptive_foreground.png",
+        "backgroundImage": "./assets/icon_adaptive_background.png",
+        "monochromeImage": "./assets/icon_adaptive_monochrome.png",
+        "backgroundColor": "#5B59F6"
+      },
+      "package": "de.bitglow.fleeter"
     },
     "web": {
       "favicon": "./assets/favicon.png"
